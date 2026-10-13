@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+public import Combine
 
 @MainActor
 final class CoinListViewModel: ObservableObject{
