@@ -33,6 +33,7 @@ final class CoinListViewModel: ObservableObject{
             return
         }
         
+        print("🔗 URL: \(url.absoluteString)")
         state = .loading
         
         do{
