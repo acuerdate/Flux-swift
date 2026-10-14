@@ -8,9 +8,9 @@
 import Foundation
 
 enum CoinGeckoAPI{
-    private static let baseURL = "https://api.coingecko.com/api/v3/coins/markets"
+    private static let baseURL = "https://api.coingecko.com/api/v3"
     
-    static func coinsURL(limit: Int = 100) -> URL? {
+    static func coinsURL(limit: Int = 20) -> URL? {
         let path = "\(baseURL)/coins/markets"
         let query = "vs_currency=usd&order=market_cap_desc&per_page=\(limit)&page=1&sparkline=false&price_change_percentage=24h"
         
